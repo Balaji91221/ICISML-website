@@ -272,18 +272,19 @@ body {
 }
 
 .btn:is(:hover, :focus)::before { transform: translateX(0); }
-
 .img-holder {
   aspect-ratio: var(--width) / var(--height);
   background-color: var(--light-gray);
   overflow: hidden;
+
 }
 
 .img-cover {
   width: 100%;
-  height: 100%;
+  height: 100%; /* Adjusted to fill the entire container */
   object-fit: cover;
 }
+
 
 .section-subtitle {
   font-size: var(--fs-5);
@@ -864,91 +865,42 @@ h2 section-commitee{
 
 
 
-
-
-/*-----------------------------------*\
-  #BLOG
-\*-----------------------------------*/
-
-.blog-card .card-banner { border-radius: var(--radius-10); }
-
-.blog-card .card-banner .img-cover { transition: var(--transition-2); }
-
-.blog-card .card-banner::after {
-  inset: 0;
-  background-color: var(--black_50);
-  opacity: 0;
-  transition: var(--transition-1);
-}
-
-.blog-card:is(:hover, :focus-within) .card-banner .img-cover { transform: scale(1.1); }
-
-.blog-card:is(:hover, :focus-within) .card-banner::after { opacity: 1; }
-
 .blog-card .card-content {
   position: relative;
-  margin-inline: 15px;
+  margin: 30px auto; /* Adjusted margin */
   background-color: var(--white);
   padding: 20px;
   border-radius: var(--radius-10);
   box-shadow: var(--shadow-3);
-  margin-block-start: -100px;
-  z-index: 1;
+  justify-content: center;
 }
 
-.blog-card .card-btn {
-  position: absolute;
-  top: -40px;
-  right: 30px;
-  background-color: var(--kappel);
-  color: var(--white);
-  font-size: 20px;
-  padding: 20px;
-  border-radius: var(--radius-circle);
-  transition: var(--transition-1);
-  opacity: 0;
-}
-
-.blog-card .card-btn:is(:hover, :focus) { background-color: var(--radical-red); }
-
-.blog-card:is(:hover, :focus-within) .card-btn {
-  opacity: 1;
-  transform: translateY(10px);
-}
-
-.blog-card :is(.card-meta-item, .card-text, .card-subtitle) {
+.blog-card .card-text {
+  color: #000;
   font-size: var(--fs-5);
+  line-height: 1.6; /* Improved readability */
 }
 
-.blog-card .card-subtitle { text-transform: uppercase; }
-
-.blog-card .card-title {
-  margin-block: 10px 15px;
-  transition: var(--transition-1);
-}
-
-.blog-card .card-title:is(:hover, :focus) { color: var(--kappel); }
-
-.blog-card :is(.card-meta-list, .card-meta-item) { display: flex; }
-
-.blog-card .card-meta-list {
-  flex-wrap: wrap;
-  gap: 10px 20px;
-  margin-block-end: 20px;
-}
-
-.blog-card .card-meta-item {
-  gap: 10px;
-  align-items: center;
-  color: var(--eerie-black-1);
-}
-
-.blog-card .card-meta-item ion-icon {
+.blog-title {
   color: var(--kappel);
-  font-size: 18px;
-  --ionicon-stroke-width: 40px;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 30px auto; /* Center align the title */
+  text-align: center;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.card-title:hover{
+  color: var(--kappel);
+}
 
 
 
@@ -956,6 +908,16 @@ h2 section-commitee{
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
+.footer-brand .wrapper {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  gap: 5px;
+}
+
+.footer-brand .wrapper .span {
+  font-weight: var(--fw-500);
+  margin-bottom: 5px; /* Add some space below the span */
+}
 
 .footer {
   background-repeat: no-repeat;
@@ -1060,7 +1022,8 @@ h2 section-commitee{
 
 .main-timeline {
   position: relative;
-  margin: 30px;
+  margin: 10px;
+
 }
 .time{
   color: #000;
@@ -1071,6 +1034,29 @@ h2 section-commitee{
   
 
 }
+.time-1 {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 30px auto; /* Added margin and set auto for left and right to center horizontally */
+  text-align: center; /* Center align the text */
+  animation: bounce 1s infinite alternate; /* Apply the bounce animation */
+  
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+
 .main-timeline:after {
   content: '';
   display: block;

@@ -1,7 +1,7 @@
 'use strict';
 
 // Set the conference end date and time
-const conferenceEndDate = new Date("2024-02-29T12:00:00"); // Replace with your conference end date and time
+const conferenceEndDate = new Date("2024-11-25T12:00:00"); // Replace with your conference end date and time
 
 function updateTimer() {
   const now = new Date();
