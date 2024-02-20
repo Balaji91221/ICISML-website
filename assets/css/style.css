@@ -525,7 +525,7 @@ body {
   line-height: 1.6;
   color: #151414;
   margin-bottom: 10px;
-  border: 1px solid #5f82a6; /* Border color for all h4 elements */
+  border: 1px solid var(--kappel); /* Border color for all h4 elements */
   border-radius: 5px; /* Rounded corners */
   background-color: #c4e8e21f;;
 }
