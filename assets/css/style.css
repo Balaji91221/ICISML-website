@@ -317,7 +317,7 @@ body {
 .header .btn { display: none; }
 
 .header {
-  position: absolute;
+  
   top: 0;
   left: 0;
   width: 100%;
@@ -421,6 +421,46 @@ body {
   opacity: 1;
   pointer-events: all;
 }
+
+.card-title-1{
+  color: var(--radical-red);
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 30px auto; /* Center align the title */
+  text-align: center; /* Center align the text */
+}
+.card-title-1:hover{
+  color: var(--kappel);
+}
+
+.scroll-bar-section {
+  position: relative; /* Change from absolute to relative */
+  z-index: 2; /* Ensure the scrolling text appears above other content */
+}
+
+
+.modalconent {
+  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ 
+  width: 100%;
+  padding: 50px;
+}
+
+.marquee {
+  background-color: hsl(170, 75%, 41%);
+  color: black;
+  letter-spacing: 2px;
+  font-weight: 700;
+  padding: 30px;
+}
+
+
+
+
+
 
 
 
