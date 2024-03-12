@@ -945,13 +945,13 @@ h2 section-commitee{
 \*-----------------------------------*/
 .footer-brand .wrapper {
   display: flex;
-  flex-direction: column; /* Align items vertically */
+  flex-direction: column;
   gap: 5px;
 }
 
 .footer-brand .wrapper .span {
   font-weight: var(--fw-500);
-  margin-bottom: 5px; /* Add some space below the span */
+  margin-bottom: 5px;
 }
 
 .footer {
@@ -966,18 +966,27 @@ h2 section-commitee{
   gap: 30px;
 }
 
-.footer-brand-text { margin-block: 20px; }
+.footer-brand-text {
+  margin-block: 20px;
+}
 
 .footer-brand .wrapper {
   display: flex;
   gap: 5px;
 }
 
-.footer-brand .wrapper .span { font-weight: var(--fw-500); }
+.footer-brand .wrapper .span {
+  font-weight: var(--fw-500);
+}
 
-.footer-link { transition: var(--transition-1); }
+.footer-link {
+  transition: var(--transition-1);
+}
 
-.footer-link:is(:hover, :focus) { color: var(--kappel); }
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--kappel);
+}
 
 .footer-list-title {
   color: var(--white);
@@ -987,9 +996,13 @@ h2 section-commitee{
   margin-block-end: 10px;
 }
 
-.footer-list .footer-link { padding-block: 5px; }
+.footer-list .footer-link {
+  padding-block: 5px;
+}
 
-.newsletter-form { margin-block: 20px 35px; }
+.newsletter-form {
+  margin-block: 20px 35px;
+}
 
 .newsletter-form .input-field {
   background-color: var(--white);
@@ -1008,20 +1021,58 @@ h2 section-commitee{
   gap: 25px;
 }
 
-.social-link { font-size: 20px; }
+.social-link {
+  font-size: 20px;
+}
 
 .footer-bottom {
   border-block-start: 1px solid var(--eerie-black-1);
   padding-block: 30px;
 }
 
-.copyright { text-align: center; }
+.logo-1 {
+  max-width: 100%;
+  height: auto;
+}
+
+.copyright {
+  text-align: center;
+}
 
 .copyright-link {
   color: var(--kappel);
   display: inline-block;
 }
 
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .footer-brand .wrapper {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .footer-top {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .footer-brand .wrapper {
+    flex-wrap: wrap;
+  }
+
+  .newsletter-form {
+    margin-block: 20px 15px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .footer-link,
+  .social-link {
+    font-size: 16px;
+  }
+}
 
 
 
