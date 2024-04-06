@@ -898,8 +898,6 @@ h2 section-commitee{
   
 }
 
-
-
 .blog-card .card-content {
   position: relative;
   margin: 30px auto;
@@ -949,6 +947,29 @@ h2 section-commitee{
 
 .card-title:hover {
   color: #333; /* Adjust hover color for card titles */
+}
+
+/* Responsive Styling */
+@media only screen and (max-width: 768px) {
+  .blog-card .card-content {
+    padding: 10px;
+  }
+   a{
+    font-size: 0.7rem;
+  }
+
+  .blog-title {
+    font-size: 1.5rem;
+  }
+
+  table {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 10px;
+  }
 }
 
 #Registration {
