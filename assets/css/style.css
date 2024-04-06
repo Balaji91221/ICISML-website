@@ -902,22 +902,34 @@ h2 section-commitee{
 
 .blog-card .card-content {
   position: relative;
-  margin: 30px auto; /* Adjusted margin */
-  background-color: var(--white);
+  margin: 30px auto;
+  background-color: #fdfdfd;
   padding: 20px;
-  border-radius: var(--radius-10);
+  border-radius: 10px;
   box-shadow: var(--shadow-3);
-  justify-content: center;
 }
 
-.blog-card .card-text {
-  color: #000;
-  font-size: var(--fs-5);
-  line-height: 1.6; /* Improved readability */
+.blog-card .card-content ol {
+  margin-top: 15px;
+}
+
+.blog-card .card-content ol li {
+  margin-bottom: 10px;
+  margin-right: 20px; /* Adjust spacing between list items */
+}
+
+.blog-card .card-content a {
+  color: var(--kappel); /* Adjust link color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.blog-card .card-content a:hover {
+  color:var(--kappel); /* Adjust link hover color */
 }
 
 .blog-title {
-  color: var(--kappel);
+  color: #333; /* Adjust title color */
   font-size: 2rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -925,6 +937,7 @@ h2 section-commitee{
   text-align: center;
 }
 
+/* Optional: Animation */
 @keyframes bounce {
   0% {
     transform: translateY(0);
@@ -933,13 +946,48 @@ h2 section-commitee{
     transform: translateY(-10px);
   }
 }
-.card-title:hover{
-  color: var(--kappel);
+
+.card-title:hover {
+  color: #333; /* Adjust hover color for card titles */
+}
+
+#Registration {
+  text-align: center;
 }
 
 
+table {
+  width: 50%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  color: #000;
+}
 
+th, td {
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  text-align: center;
+}
 
+th:last-child, td:last-child {
+  border-right: none;
+}
+
+th {
+  background-color: var(--kappel);
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+tr:first-child {
+  font-weight: bold;
+}
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
@@ -1602,7 +1650,7 @@ h2 section-commitee{
 
   .navbar-list {
     display: flex;
-    gap: 50px;
+    gap: 30px;
     padding: 0;
   }
 
