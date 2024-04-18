@@ -1671,7 +1671,7 @@ tr:first-child {
 
   .navbar-list {
     display: flex;
-    gap: 30px;
+    gap: 25px;
     padding: 0;
   }
 
@@ -1684,6 +1684,11 @@ tr:first-child {
 
   .header .btn { margin-inline-end: 0; }
 
+.btn-1{
+  
+  color: var(--kappel);
+
+}
 
 
   /**
