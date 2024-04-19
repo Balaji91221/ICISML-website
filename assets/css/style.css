@@ -1671,7 +1671,7 @@ tr:first-child {
 
   .navbar-list {
     display: flex;
-    gap: 25px;
+    gap: 30px;
     padding: 0;
   }
 
