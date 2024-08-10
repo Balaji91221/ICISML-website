@@ -2,6 +2,16 @@
 
 // Set the conference end date and time
 const conferenceEndDate = new Date("2024-08-23T12:00:00"); // Replace with your conference end date and time
+window.onload = function() {
+  // Show the poster when the page loads
+  const poster = document.getElementById('poster');
+  poster.classList.add('show-poster');
+
+  // Hide the poster after 5 seconds
+  setTimeout(() => {
+    poster.classList.remove('show-poster');
+  }, 5000);
+};
 
 function updateTimer() {
   const now = new Date();
