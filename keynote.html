@@ -7,135 +7,170 @@
   <title>Keynote Speakers</title>
   <style>
     body {
-      background-color: #f9f9f9;
+      background-color: #f0f2f5;
       margin: 10px;
       padding: 15px;
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', Arial, sans-serif;
       box-sizing: border-box;
       text-align: justify;
+      color: #333;
     }
 
     .container {
       margin: 0;
-      padding: 10px;
+      padding: 20px;
       text-align: center;
-      background: linear-gradient(45deg, #c04848, #480048);
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
       color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     .speaker-img {
-      width: 220px;
-      height: 230px;
-      border-radius: 30px;
-      margin-bottom: 15px;
-      border: 30px;
-      padding: 30px;
+      width: 100%;
+      max-width: 220px;
+      height: auto;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease-in-out;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .speaker-img:hover {
+      transform: scale(1.05);
     }
 
     .name {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       font-weight: bold;
-      margin-bottom: 5px;
-      color: #333;
+      margin-bottom: 10px;
+      color: #444;
     }
 
-    .bio {
-      font-size: 0.9rem;
-      color: #191919;
-      line-height: 1.5;
+    .bio, .abstract {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 15px;
     }
 
     .abstract {
-      font-size: 0.9rem;
       font-weight: bold;
-      color: #242424;
-      margin-top: 15px;
+      color: #444;
     }
 
     h1 {
       margin: 5px;
       padding: 0px;
-      font-size: 1.5rem;
+      font-size: 2rem;
+      color: #fff;
     }
 
     a {
-      color: hsl(0, 0%, 100%);
-      text-decoration: none;
+      color: #fff;
       text-decoration: underline;
     }
 
     a:hover {
-      color: hsl(170, 75%, 41%);
+      color: #f5a623;
       text-decoration: underline;
+    }
+
+    .speaker-info {
+      margin-bottom: 40px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .info h4 {
+      font-size: 1.1rem;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .info p {
+      margin-bottom: 15px;
+    }
+
+    .poster {
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .poster img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     /* Responsive styles */
     @media only screen and (min-width: 600px) {
       .container {
-        padding: 20px;
+        padding: 40px;
+      }
+
+      .speaker-info {
+        display: flex;
+        align-items: center;
+        gap: 20px;
       }
 
       .speaker-img {
-        max-width: 400px;
+        max-width: 250px;
+        margin-bottom: 0;
+      }
 
+      .info {
+        text-align: left;
       }
     }
   </style>
-
 </head>
 
 <body>
   <div>
     <div class="container">
       <h1>Keynote Speakers</h1>
-      <h1> <a href="/">home</a> / Keynotes </h1>
+      <h1> <a href="/">Home</a> / Keynotes </h1>
     </div>
 
     <div class="speaker-info">
-
-      
       <img src="./assets/images/k-1.png" alt="Professor Álvaro Rocha" class="speaker-img">
       <div class="info">
         <h3 class="name">Professor Álvaro Rocha</h3>
         <h4>Title: A Health Data Analytics Maturity Model for Hospital Information Systems</h4>
-        <p class="bio">Álvaro Rocha is World’s Top 1% cited Scientist according to Stanford University (USA) and Elsevier and World’s Top 1% cited Scientist according to ResearchGate in the domains of information science and information systems. He is Professor at ISEG, University of Lisbon, Visiting Professor at the University of Calabria, Honorary Professor at Amity University, President of ITMA – Information and Technology Management Association, Vice-Chair of IEEE SMC Portugal Chapter, and Book Series Scientific Manager at Springer-Nature. He holds the title of Honorary Professor, D.Sc. in Information Science, Ph.D. in Information Systems and Technologies, M.Sc. in Information Management, and BCs in Computer Science. He is researcher at the ADVANCE program (the ISEG Centre for Advanced Research in Management), and a collaborator researcher at both LIACC (Laboratory of Artificial Intelligence and Computer Science) and CINTESIS (Center for Research in Health Technologies and Information Systems). His main research interests are maturity models, information systems quality, online service quality, requirements engineering, intelligent information systems, e-Government, e-Health, and information technology in education. He is also Founder and Editor-in-Chief of both following Scopus and/or WoS journals: JISEM (Journal of Information Systems Engineering & Management) and RISTI (Revista Ibérica de Sistemas e Tecnologias de Informação / Iberian Journal of Information Systems and Technologies). Moreover, he has served as a Vice-Chair of Experts for the European Commission’s Horizon 2020 Program, and as an Expert at the COST – intergovernmental framework for European Cooperation in Science and Technology at the European Commission’s Horizon Europe Program. In addition, he has advised Ministry of Universities and Research in Italy, Ministry of Finance in Latvia, National Council of Science and Technology in Mexico, National Science Centre in Poland, and the Research and Innovation Foundations in Cyprus.</p>
+        <p class="bio">Álvaro Rocha is one of the world’s top 1% cited scientists, according to Stanford University (USA) and Elsevier, specializing in information science and information systems. He is a professor at ISEG, University of Lisbon, and a visiting professor at several prestigious universities. He has served in numerous academic and advisory roles globally, contributing to the fields of e-Government, e-Health, and information technology in education.</p>
         <h4>Abstract:</h4>
         <p class="abstract">In the last five decades, maturity models have been introduced as reference frameworks for Information System (IS) management in organizations within different industries. In the healthcare domain, maturity models have also been used to address a wide variety of challenges and the high demand for Hospital IS (HIS) implementations. The increasing volume of data exceeds the ability of health organizations to process it for improving clinical and financial efficiencies and quality of care. It is believed that careful and attentive use of Data Analytics in healthcare can transform data into knowledge that can improve patient outcomes and operational efficiency. A maturity model in this conjuncture, is a way of identifying strengths and weaknesses of the HIS maturity and thus, find a way for improvement and evolution. This speech presents a proposal to measure Hospitals Information Systems maturity regarding Data Analytics. The outcome is a maturity model, which includes six stages of HIS growth and maturity progression.</p>
       </div>
     </div>
 
     <div class="speaker-info">
-      <img src="./assets/images/keynote-2.jpg" alt="Dr Kumar Gautam 
-        " class="speaker-img">
+      <img src="./assets/images/keynote-2.jpg" alt="Dr Kumar Gautam" class="speaker-img">
       <div class="info">
-        <h3 class="name">Dr Kumar Gautam
-        </h3>
-        <h4>Founder and President
-        </h4>
-        <p class="bio">Quantum Research And Centre of Excellence, New Delhi, Delhi, India.</p>
-
+        <h3 class="name">Dr Kumar Gautam</h3>
+        <h4>Founder and President</h4>
+        <p class="bio">Quantum Research And Centre of Excellence, New Delhi, India.</p>
         <p class="abstract">The concept of applying a quantized ridge waveguide electromagnetic field interacting with quantum dots (QDs) technology to construct a quantum-controlled gate. The fundamental building blocks of quantum information, qubits, can be manipulated and entangled thanks to the use of quantum-controlled gates in quantum computing. The quantized ridge waveguide electromagnetic fields' special characteristics and the controllable interactions between them and QDs are utilised in the suggested implementation. The study starts with a thorough analysis of the concepts behind quantum dots (QDs), quantum-controlled gates, and quantum computing. It talks about how important it is to create scalable and effective quantum-controlled gates in order to advance the field of quantum computing. In the suggested implementation, a quantized ridge waveguide—a waveguide structure that can quantize photon confinement—is used.</p>
       </div>
     </div>
 
     <div class="speaker-info">
-      <img src="./assets/images/k-3.jpg" alt="Fernando Moreira
-      " class="speaker-img">
+      <img src="./assets/images/k-3.jpg" alt="Fernando Moreira" class="speaker-img">
       <div class="info">
-        <h3 class="name">Fernando Moreira
-        </h3>
-        <h4> Full Professor REMIT, IJP, Portucalense University, Portugal
-        </h4>
-        <h4>Title: Erudite Illiterates and the Ethics of AI in Education
-        </h4>
-        <p class="abstract">Abstract:  This presentation explores the intersection between "erudite illiterates" and the ethical challenges of integrating Artificial Intelligence (AI) in education. The term "erudite illiterates" describes highly educated individuals in specific fields who lack critical understanding regarding emerging technologies, such as AI. It explores how this lack of digital literacy can influence AI's ethical adoption and implementation in education. Furthermore, it discusses the moral implications arising from the growing dependence on algorithms and AI systems in the educational process, including algorithmic bias, student privacy, and equity in access to technology. We propose strategies to promote an ethical and reflective approach to integrating AI in education, empowering educators and students to understand and critically question the role of technology in the classroom. By acknowledging the ethical challenges and promoting a culture of digital responsibility, we can ensure that AI is used ethically and equitably to facilitate meaningful learning and human development in 21st-century education.</p>
-      
-        
+        <h3 class="name">Fernando Moreira</h3>
+        <h4>Full Professor, REMIT, IJP, Portucalense University, Portugal</h4>
+        <h4>Title: Erudite Illiterates and the Ethics of AI in Education</h4>
+        <p class="abstract"> This presentation explores the intersection between "erudite illiterates" and the ethical challenges of integrating Artificial Intelligence (AI) in education. The term "erudite illiterates" describes highly educated individuals in specific fields who lack critical understanding regarding emerging technologies, such as AI. It explores how this lack of digital literacy can influence AI's ethical adoption and implementation in education. Furthermore, it discusses the moral implications arising from the growing dependence on algorithms and AI systems in the educational process, including algorithmic bias, student privacy, and equity in access to technology. We propose strategies to promote an ethical and reflective approach to integrating AI in education, empowering educators and students to understand and critically question the role of technology in the classroom. By acknowledging the ethical challenges and promoting a culture of digital responsibility, we can ensure that AI is used ethically and equitably to facilitate meaningful learning and human development in 21st-century education.</p>
       </div>
     </div>
 
-
-
+    <div class="poster">
+      <img src="./poster.jpg" alt="Conference Poster">
+    </div>
 
   </div>
 </body>
