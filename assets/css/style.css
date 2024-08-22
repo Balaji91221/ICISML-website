@@ -395,7 +395,7 @@ body {
   color: var(--white);
 }
 
-.navbar-list { padding: 15px 20px; }
+.navbar-list { padding: 13px 18px; }
 
 .navbar-item:not(:last-child) { border-block-end: 1px solid var(--platinum); }
 
